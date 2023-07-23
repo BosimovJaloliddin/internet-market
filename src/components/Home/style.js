@@ -12,9 +12,11 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: ${({ gap }) => gap && `${gap}px`};
-  margin-top: ${({ mt }) => mt && `${mt}px`};
+  align-items: ${({ $al }) => ($al ? $al : "center")};
+  flex-direction: ${({ $cl }) => $cl && "column"};
+  gap: ${({ $gap }) => $gap && `${$gap}px`};
+  margin-top: ${({ $mt }) => $mt && `${$mt}px`};
+  padding-top: ${({ $pt }) => $pt && `${$pt}px`};
 `;
 const Title = styled.h1`
   font-family: "Rubik";
@@ -23,13 +25,11 @@ const Title = styled.h1`
   font-weight: 700;
   color: #414141;
   line-height: 150%;
-  padding-top: 80px;
 `;
 const SubTitle = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-top: 80px;
   cursor: pointer;
   span {
     text-align: center;
