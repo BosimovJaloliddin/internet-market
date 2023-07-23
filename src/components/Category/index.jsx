@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../pages/Footer";
+import Footer from "../../components/Footer";
 import {
   Bg,
   Container,
