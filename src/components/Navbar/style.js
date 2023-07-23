@@ -6,7 +6,6 @@ import { ReactComponent as menu } from "../../assets/icons/menu.svg";
 import { ReactComponent as search } from "../../assets/icons/search.svg";
 
 const Container = styled.div`
-  /* background: blue; */
   background: #fff;
   box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
 `;
@@ -15,7 +14,7 @@ const Wrapp = styled.ul`
   max-width: 1440px;
   height: 72px;
   padding: 0px 116px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 40px;
   flex-shrink: 0;
@@ -71,7 +70,24 @@ const WrapSearch = styled.div`
   width: 375px;
   height: 40px;
 `;
-const User = styled.div``;
+const User = styled.div`
+  display: flex;
+  align-items: center;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #232323;
+  line-height: 150%;
+  margin-left: 1rem;
+  padding: 0 18px;
+  border: 1px solid #232323;
+  border-radius: 4px;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+`;
 const Search = styled.input`
   width: 100%;
   height: 100%;

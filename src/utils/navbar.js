@@ -1,20 +1,20 @@
 import React from "react";
-import Home from "../components/Home";
-import Contact from "../components/Contact";
+import HomePage from "../pages/Home";
+import CategoryPage from "../pages/Category";
 export const navbar = [
   {
-    id: 1,
+    id: "1",
     title: "Home",
-    element: <Home />,
+    element: <HomePage />,
     path: "/home",
     private: false,
     hidden: false,
   },
   {
-    id: 1,
-    title: "Contact",
-    element: <Contact />,
-    path: "/contact",
+    id: "2",
+    title: "Category",
+    element: <CategoryPage />,
+    path: "/category",
     private: false,
     hidden: false,
   },

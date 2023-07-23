@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Button, Dropdown, Space } from "antd";
+import { Dropdown } from "antd";
 
 import {
   Container,
@@ -35,11 +35,11 @@ const Navbar = () => {
       <Container>
         <Wrapp>
           <Items>
-            <Item>Logo</Item>
+            <Item onClick={() => navigate("/home")}>Logo</Item>
           </Items>
           <Items>
-            <Dropdown dropdownRender={() => menu} placement={"bottomCenter"}>
-              <Category>
+            <Dropdown dropdownRender={() => menu}>
+              <Category onClick={() => navigate("/category")}>
                 <Icons.Menu />
                 <span>Kategory</span>
               </Category>
@@ -63,8 +63,7 @@ const Navbar = () => {
               <span>Savat</span>
             </Item>
             <User>
-              <img src="#" alt="" />
-              <span>Jalol</span>
+              <span>Login</span>
             </User>
           </Items>
         </Wrapp>
