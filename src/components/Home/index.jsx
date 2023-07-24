@@ -3,12 +3,12 @@ import { productDiscount, productNew } from "../../data/product";
 import Product from "../Product";
 import { Bg, Container, Icons, SubTitle, Title, Wrapper } from "./style";
 import Footer from "../Footer";
-
 import GoogleMapReact from "google-map-react";
-
-// const AnyReactComponent = ({ text }) => <h1>{text}</h1>;
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const defaultProps = {
     center: {
       lat: 41,
@@ -21,7 +21,7 @@ const Home = () => {
       <Container>
         <Wrapper $pt={80}>
           <Title>Aksiyalar</Title>
-          <SubTitle>
+          <SubTitle onClick={() => navigate("/product-discount")}>
             <span>Hammasini ko'rish</span>
             <Icons.Arrow />
           </SubTitle>
@@ -33,7 +33,7 @@ const Home = () => {
         </Wrapper>
         <Wrapper $mt={120}>
           <Title>Yangilari</Title>
-          <SubTitle>
+          <SubTitle onClick={() => navigate("/product")}>
             <span>Hammasini ko'rish</span>
             <Icons.Arrow />
           </SubTitle>

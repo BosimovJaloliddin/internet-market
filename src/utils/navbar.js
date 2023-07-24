@@ -1,6 +1,9 @@
 import React from "react";
 import HomePage from "../pages/Home";
 import CategoryPage from "../pages/Category";
+import ProductPage from "../pages/Products";
+import ProductDiscountPage from "../pages/ProductDiscount";
+
 export const navbar = [
   {
     id: "1",
@@ -15,6 +18,22 @@ export const navbar = [
     title: "Category",
     element: <CategoryPage />,
     path: "/category",
+    private: false,
+    hidden: false,
+  },
+  {
+    id: "3",
+    title: "ProductDiscount",
+    element: <ProductDiscountPage />,
+    path: "/product-discount",
+    private: false,
+    hidden: false,
+  },
+  {
+    id: "4",
+    title: "Product",
+    element: <ProductPage />,
+    path: "/product",
     private: false,
     hidden: false,
   },
