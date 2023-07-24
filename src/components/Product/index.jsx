@@ -15,6 +15,7 @@ import img from "../../assets/images/no-img.png";
 
 const Product = (prop) => {
   const { url, salary, description, discount, markets } = prop.data;
+
   return (
     <Container>
       <WrapImage>

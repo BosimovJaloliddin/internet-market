@@ -82,6 +82,7 @@ const Button = styled.div`
   font-weight: 400;
   line-height: 150%;
   cursor: pointer;
+  margin: 0 8px;
   &:active {
     transform: scale(0.97);
   }

@@ -39,6 +39,9 @@ const SubTitle = styled.div`
     font-weight: 400;
     color: #606060;
     line-height: 150%;
+    &:active {
+      transform: scale(0.96);
+    }
   }
 `;
 

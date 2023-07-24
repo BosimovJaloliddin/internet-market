@@ -21,11 +21,11 @@ const WrapItems = styled.div`
 `;
 const Items = styled.div`
   display: flex;
-  gap: ${({ gap }) => gap && `${gap}px`};
+  gap: ${({ $gap }) => $gap && `${$gap}px`};
 `;
 const Item = styled.div`
   font-family: "Rubik";
-  font-size: ${({ fs }) => (fs ? `${fs}px` : `${12}px`)};
+  font-size: ${({ $fs }) => ($fs ? `${$fs}px` : `${12}px`)};
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
