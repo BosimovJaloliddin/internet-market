@@ -3,8 +3,7 @@ import { ReactComponent as star } from "../../assets/icons/star.svg";
 import { ReactComponent as like } from "../../assets/icons/love.svg";
 
 const Container = styled.div`
-  max-width: 292px;
-  min-width: 270px;
+  width: 292px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);

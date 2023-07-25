@@ -25,10 +25,11 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: ${({ $cl }) => $cl && $cl};
   justify-content: ${({ $jc }) => $jc && $jc};
+  flex-wrap: ${({ $fw }) => $fw && $fw};
   gap: ${({ $gap }) => $gap && `${$gap}px`};
   flex: ${({ $flx }) => $flx && $flx};
   margin-top: ${({ $mt }) => $mt && `${$mt}px`};
-  /* align-items: center; */
+  /* align-items: ${({ $align }) => $align && $align}; */
 `;
 const Navigate = styled.span`
   color: #414141;

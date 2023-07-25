@@ -87,6 +87,38 @@ const productNew = [
     markets: 6000,
     category: "sabzavot",
   },
+  {
+    id: 6,
+    url: "https://cdn.pixabay.com/photo/2014/01/02/04/31/eggplant-237448_640.jpg",
+    salary: 3000,
+    description: "Bulg'or qalampiri",
+    markets: 6000,
+    category: "sabzavot",
+  },
+  {
+    id: 7,
+    url: "https://cdn.pixabay.com/photo/2014/01/02/04/31/eggplant-237448_640.jpg",
+    salary: 3000,
+    description: "Qalampir",
+    markets: 2000,
+    category: "sabzavot",
+  },
+  {
+    id: 8,
+    url: "https://cdn.pixabay.com/photo/2014/01/02/04/31/eggplant-237448_640.jpg",
+    salary: 3000,
+    description: "Qalampir",
+    markets: 2000,
+    category: "sabzavot",
+  },
+  {
+    id: 9,
+    url: "https://cdn.pixabay.com/photo/2014/01/02/04/31/eggplant-237448_640.jpg",
+    salary: 3000,
+    description: "Qalampir",
+    markets: 2000,
+    category: "sabzavot",
+  },
 ];
 const category = [
   { id: 1, category: "sut, yog', tuxum" },
