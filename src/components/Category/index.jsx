@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer";
+import { useNavigate } from "react-router-dom";
 import {
   Bg,
   Container,
@@ -17,6 +18,8 @@ import fruits from "../../assets/images/fruits.png";
 import meat from "../../assets/images/meat.png";
 
 const Category = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Bg>
@@ -27,56 +30,56 @@ const Category = () => {
           <Title>Category</Title>
           <CategoryItems>
             <CategoryItem>
-              <WrapImg w={584}>
+              <WrapImg onClick={() => navigate("/category/sut")} $w={584}>
                 <Img src={milk} />
                 <span>Sut, yog', tuxum</span>
                 <Gradient></Gradient>
               </WrapImg>
-              <WrapImg w={272}>
+              <WrapImg onClick={() => navigate("/category/non")} $w={272}>
                 <Img src={bread} />
                 <span>Non</span>
                 <Gradient></Gradient>
               </WrapImg>
-              <WrapImg w={272}>
+              <WrapImg onClick={() => navigate("/category/meva")} $w={272}>
                 <Img src={fruits} />
                 <span>Mevalar</span>
                 <Gradient></Gradient>
               </WrapImg>
             </CategoryItem>
             <CategoryItem>
-              <WrapImg w={272}>
+              <WrapImg onClick={() => navigate("/category/sabzavot")} $w={272}>
+                <Img src={bread} />
+                <span>Sabzavot</span>
+                <Gradient></Gradient>
+              </WrapImg>
+              <WrapImg onClick={() => navigate("/category/ko'kat")} $w={272}>
+                <Img src={bread} />
+                <span>Ko'kat</span>
+                <Gradient></Gradient>
+              </WrapImg>
+              <WrapImg $w={272}>
                 <Img src={bread} />
                 <span>Non</span>
                 <Gradient></Gradient>
               </WrapImg>
-              <WrapImg w={272}>
-                <Img src={bread} />
-                <span>Non</span>
-                <Gradient></Gradient>
-              </WrapImg>
-              <WrapImg w={272}>
-                <Img src={bread} />
-                <span>Non</span>
-                <Gradient></Gradient>
-              </WrapImg>
-              <WrapImg w={272}>
+              <WrapImg $w={272}>
                 <Img src={fruits} />
                 <span>Mevalar</span>
                 <Gradient></Gradient>
               </WrapImg>
             </CategoryItem>
             <CategoryItem>
-              <WrapImg w={272}>
+              <WrapImg $w={272}>
                 <Img src={bread} />
                 <span>Non</span>
                 <Gradient></Gradient>
               </WrapImg>
-              <WrapImg w={272}>
+              <WrapImg $w={272}>
                 <Img src={fruits} />
                 <span>Non</span>
                 <Gradient></Gradient>
               </WrapImg>
-              <WrapImg w={584}>
+              <WrapImg $w={584}>
                 <Img src={meat} />
                 <span>Non</span>
                 <Gradient></Gradient>

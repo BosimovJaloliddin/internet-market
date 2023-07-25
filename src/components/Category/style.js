@@ -43,8 +43,9 @@ const CategoryItem = styled.div`
 `;
 const WrapImg = styled.div`
   position: relative;
-  max-width: ${({ w }) => w && `${w}px`};
+  max-width: ${({ $w }) => $w && `${$w}px`};
   height: 200px;
+  cursor: pointer;
   span {
     position: absolute;
     left: 10px;

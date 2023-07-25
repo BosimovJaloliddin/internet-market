@@ -3,6 +3,7 @@ import HomePage from "../pages/Home";
 import CategoryPage from "../pages/Category";
 import ProductPage from "../pages/Products";
 import ProductDiscountPage from "../pages/ProductDiscount";
+import CategoryItemPage from "../pages/CategoryItem";
 
 export const navbar = [
   {
@@ -34,6 +35,14 @@ export const navbar = [
     title: "Product",
     element: <ProductPage />,
     path: "/product",
+    private: false,
+    hidden: false,
+  },
+  {
+    id: "5",
+    title: "Category",
+    element: <CategoryItemPage />,
+    path: "/category/:id",
     private: false,
     hidden: false,
   },

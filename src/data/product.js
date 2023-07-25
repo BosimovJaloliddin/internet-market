@@ -6,6 +6,7 @@ const productDiscount = [
     description: "Sut yangi sog'ilgan 3 soatda yetqazib beriladi.",
     discount: 30,
     markets: 10000,
+    category: "sut",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const productDiscount = [
     description: "Pamidor to'g'ri daladan 2 soatda yetqaziladi.",
     discount: 50,
     markets: 7000,
+    category: "sabzavot",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const productDiscount = [
     description: "Olma daraxtdan to'g'ri uyingizga",
     discount: 30,
     markets: 10000,
+    category: "meva",
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const productDiscount = [
     description: "Baqlajon yangi uzilgan",
     discount: 40,
     markets: 6000,
+    category: "sabzavot",
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const productDiscount = [
     description: "Baqlajon yangi uzilgan",
     discount: 30,
     markets: 6000,
+    category: "sabzavot",
   },
 ];
 
@@ -48,6 +53,7 @@ const productNew = [
     salary: 6000,
     description: "Sut yangi sog'ilgan 3 soatda yetqazib beriladi.",
     markets: 10000,
+    category: "sut",
   },
   {
     id: 2,
@@ -55,6 +61,7 @@ const productNew = [
     salary: 4000,
     description: "Pamidor to'g'ri daladan 2 soatda yetqaziladi.",
     markets: 7000,
+    category: "sabzavot",
   },
   {
     id: 3,
@@ -62,6 +69,7 @@ const productNew = [
     salary: 6000,
     description: "Olma daraxtdan to'g'ri uyingizga",
     markets: 10000,
+    category: "meva",
   },
   {
     id: 4,
@@ -69,6 +77,7 @@ const productNew = [
     salary: 3000,
     description: "Baqlajon yangi uzilgan",
     markets: 6000,
+    category: "sabzavot",
   },
   {
     id: 5,
@@ -76,6 +85,15 @@ const productNew = [
     salary: 3000,
     description: "Baqlajon yangi uzilgan",
     markets: 6000,
+    category: "sabzavot",
   },
 ];
-export { productDiscount, productNew };
+const category = [
+  { id: 1, category: "sut, yog', tuxum" },
+  { id: 2, category: "non" },
+  { id: 3, category: "meva" },
+  { id: 4, category: "sabzavot" },
+  { id: 5, category: "ko'kat" },
+];
+
+export { productDiscount, productNew, category };
